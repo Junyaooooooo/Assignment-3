@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .red-circle {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: -50px; /* Adjust as needed to place it partially off the page */
+    transform: translateY(-50%);
+  }
+  
+  .column {
+    flex: 1;
+    max-width: calc(50% - 20px); 
+    margin-right: 20px; 
+  }
+  
+  h1, p {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .red-circle {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .column {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+  p{
+    text-indent: 20px
+  }
